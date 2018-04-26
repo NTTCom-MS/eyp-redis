@@ -1,0 +1,9 @@
+
+# <%= @group_name %>
+sentinel monitor <%= @group_name %> <%= @redis_addr %> <%= @redis_port %> <%= @quorum %>
+<% if defined?(@redis_password) -%>
+sentinel auth-pass <%= @group_name %> <%= @redis_password %>
+<% end -%>
+sentinel down-after-milliseconds <%= @group_name %> <%= @down_after_milliseconds %>
+sentinel parallel-syncs <%= @group_name %> <%= @parallel_syncs %>
+sentinel failover-timeout <%= @group_name %> <%= @failover_timeout %>

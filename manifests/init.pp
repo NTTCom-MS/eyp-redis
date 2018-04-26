@@ -1,7 +1,3 @@
-# == Class: redis
-#
-# === redis documentation
-#
 class redis(
                             $manage_package        = true,
                             $package_ensure        = 'installed',

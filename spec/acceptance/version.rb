@@ -5,10 +5,10 @@ _operatingsystemrelease = fact('operatingsystemrelease').to_f
 
 case _osfamily
 when 'RedHat'
-  $examplevar = 'valrh'
+  $sentinel_servicename = 'redis-sentinel'
 
 when 'Debian'
-  $examplevar = 'valdeb'
+  $sentinel_servicename = 'redis-sentinel'
 
 else
   $examplevar = '-_-'

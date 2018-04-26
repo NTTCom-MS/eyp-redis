@@ -1,37 +1,38 @@
 {
   "name": "eyp-redis",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "eyp",
-  "summary": "multi instance redis",
+  "summary": "multi instance redis with sentinel support",
   "license": "Apache-2.0",
   "source": "https://github.com/NTTCom-MS/eyp-redis",
   "project_page": "https://github.com/NTTCom-MS/eyp-redis",
   "issues_url": "https://github.com/NTTCom-MS/eyp-redis/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib", "version_requirement":">= 1.0.0 < 9.9.9"},
+    {"name":"puppetlabs/concat","version_requirement":">= 1.2.3 < 3.0.0"},
     {"name":"eyp/systemd", "version_requirement":">= 0.1.7 < 0.2.0"},
     {"name":"eyp/eyplib", "version_requirement":">= 0.1.0 < 0.2.0"}
   ],
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "6", "7" ]
     },
     {
       "operatingsystem": "CentOS",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "6", "7" ]
     },
     {
       "operatingsystem": "Scientific",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "6", "7" ]
     },
     {
       "operatingsystem": "OEL",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "6", "7" ]
     },
     {
       "operatingsystem": "OracleLinux",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "6", "7" ]
     },
     {
       "operatingsystem": "Ubuntu",
